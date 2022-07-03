@@ -11,8 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         binding.button.setOnClickListener {
-            val diceRoll=(1..6).random()
-            val diceImg=when(diceRoll){
+            val diceImg=when((1..6).random()){
                 1->R.drawable.dice_1
                 2->R.drawable.dice_2
                 3->R.drawable.dice_3
